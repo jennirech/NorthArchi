@@ -11,7 +11,11 @@
   <meta property="og:description" content="Do primeiro traço ao espaço vivido. Arquitetura, planejamento e soluções para transformar ideias em espaços funcionais.">
   <meta property="og:locale" content="pt_BR">
   <!-- TODO: og:image e og:url quando o domínio e as fotos reais estiverem definidos -->
+  <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
 
   <script>document.documentElement.classList.add("js")</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -225,29 +229,29 @@
             </li>
 
             <li class="tile tile--materials" data-reveal>
-              <ul class="swatches" aria-label="Amostras de materiais (ilustrativas)">
-                <li style="--c:#B9B2A4">Pedra</li>
-                <li style="--c:#9C7B5B">Madeira</li>
-                <li style="--c:#E4DED2">Linho</li>
-                <li style="--c:#4A4D4A">Metal</li>
+              <ul class="swatches" aria-label="Amostras de materiais">
+                <li><span class="swatch" style="background-image:url(assets/img/materiais/pedra-travertino.webp)"></span><span class="swatch__name">Travertino</span></li>
+                <li><span class="swatch" style="background-image:url(assets/img/materiais/madeira-carvalho.webp)"></span><span class="swatch__name">Carvalho</span></li>
+                <li><span class="swatch" style="background-image:url(assets/img/materiais/linho.webp)"></span><span class="swatch__name">Linho</span></li>
+                <li><span class="swatch" style="background-image:url(assets/img/materiais/metal-grafite.webp)"></span><span class="swatch__name">Metal</span></li>
               </ul>
               <p class="tile__cap"><span>c</span> Materiais</p>
             </li>
 
             <li class="tile tile--photo tile--site" data-reveal>
               <figure class="frame">
-                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=70"
-                     alt="Mesa com pranchas de projeto e instrumentos de desenho (imagem de referência)" loading="lazy" width="900" height="700">
+                <img src="assets/img/projetos/juju-baby-projeto.webp"
+                     alt="Render do projeto da fachada da loja Juju Baby" loading="lazy" width="1166" height="1035">
               </figure>
-              <p class="tile__cap"><span>d</span> Projeto e obra <em>— referência</em></p>
+              <p class="tile__cap"><span>d</span> Projeto <em>— Juju Baby</em></p>
             </li>
 
             <li class="tile tile--photo tile--done" data-reveal>
               <figure class="frame">
-                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1100&q=70"
-                     alt="Sala de estar iluminada com mobiliário em tons claros (imagem de referência)" loading="lazy" width="1100" height="800">
+                <img src="assets/img/projetos/juju-baby-executado.webp"
+                     alt="Fachada da loja Juju Baby executada, no Shopping São Bernardo Plaza" loading="lazy" width="1340" height="1005">
               </figure>
-              <p class="tile__cap"><span>e</span> Espaço vivido <em>— referência</em></p>
+              <p class="tile__cap"><span>e</span> Executado <em>— Juju Baby</em></p>
             </li>
           </ol>
         </div>
@@ -336,31 +340,29 @@
         <div class="projects__intro">
           <h2 class="display display--md" id="projects-title" data-reveal>Necessidade, solução <em>e espaço construído.</em></h2>
           <p class="notice" data-reveal>
-            <strong>Conteúdo de exemplo.</strong> Imagens e textos abaixo são referências de layout e serão substituídos pelos projetos reais da North.
+            <strong>Juju Baby</strong> é um projeto da North. Os demais são exemplos de layout e serão substituídos pelo portfólio real.
           </p>
         </div>
 
         <div class="project-grid">
           <article class="project project--xl" data-reveal>
-            <a class="project__link" href="projetos.html#p-01" aria-label="P—01, Residência unifamiliar: ver projeto">
+            <a class="project__link" href="projetos.html#juju-baby" aria-label="Juju Baby, boutique infantil: ver projeto">
               <figure class="frame project__frame">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=70"
-                     alt="Interior integrado com estar e jantar (imagem de referência)" loading="lazy" width="1600" height="1100">
+                <img src="assets/img/projetos/juju-baby-executado.webp"
+                     alt="Fachada executada da loja Juju Baby, com vitrine emoldurada e arcos com roupas suspensas" loading="lazy" width="1340" height="1005">
                 <svg class="project__marks" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M50 0V100M0 50H100"/></svg>
               </figure>
             </a>
             <div class="project__meta">
-              <p class="project__id"><span>P—01</span> Residencial <span class="tag">Exemplo</span></p>
-              <h3 class="project__title">Residência unifamiliar</h3>
+              <p class="project__id"><span>Destaque</span> Comercial · Shopping São Bernardo Plaza</p>
+              <h3 class="project__title">Juju Baby — boutique infantil</h3>
               <dl class="project__facts">
-                <div><dt>Necessidade</dt><dd>Integrar áreas sociais e trazer luz natural ao centro da casa.</dd></div>
-                <div><dt>Solução</dt><dd>Planta contínua e aberturas orientadas para o jardim.</dd></div>
-                <div><dt>Escopo</dt><dd>Projeto arquitetônico e interiores.</dd></div>
-                <div><dt>Espaço</dt><dd>A sala se estende para fora; o jardim passa a fazer parte do dia a dia.</dd></div>
+                <div><dt>Necessidade</dt><dd>Uma loja infantil que fosse, ao mesmo tempo, sofisticada e lúdica.</dd></div>
+                <div><dt>Solução</dt><dd>A magia de um jardim encantado em formato de boutique, com espaço instagramável.</dd></div>
+                <div><dt>Espaço</dt><dd>Projeto e obra lado a lado: o executado segue o que foi desenhado.</dd></div>
               </dl>
             </div>
           </article>
-
           <article class="project project--md project--offset" data-reveal>
             <a class="project__link" href="projetos.html#p-02" aria-label="P—02, Ampliação residencial: ver projeto">
               <figure class="frame project__frame">
@@ -481,13 +483,8 @@
     <section class="section about" id="a-north" aria-labelledby="about-title">
       <div class="container about__grid">
         <div class="about__visual" data-reveal>
-          <!-- Espaço reservado para a fotografia real de Jennifer e Fernanda -->
-          <figure class="frame frame--slot about__photo">
-            <figcaption>
-              <svg class="i i--lg" aria-hidden="true"><use href="#i-north"/></svg>
-              <span>Fotografia real da equipe</span>
-              <small>Jennifer Rech &amp; Fernanda Correia — inserir imagem</small>
-            </figcaption>
+          <figure class="frame about__photo">
+            <img src="assets/img/equipe/equipe-jennifer-fernanda.webp" alt="Jennifer Rech e Fernanda Correia, sócias-fundadoras da North, lado a lado e sorrindo" loading="lazy" width="742" height="1080">
           </figure>
           <p class="note about__note" aria-hidden="true">desde jan. 2020</p>
         </div>

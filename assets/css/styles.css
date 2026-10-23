@@ -386,13 +386,18 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
 .tile--site .frame { aspect-ratio: 3 / 4; }
 
 .swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-.swatches li {
-  aspect-ratio: 1 / 1.6; background: var(--c); position: relative;
-  display: flex; align-items: flex-end; padding: 8px;
-  font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink);
-  transition: transform .5s var(--ease);
+/* Amostras: textura real + etiqueta técnica, como uma placa de material */
+.swatches li { display: grid; gap: 8px; transition: transform .5s var(--ease); }
+.swatch {
+  display: block; aspect-ratio: 1 / 1.6; position: relative;
+  background: var(--paper-2) center / cover no-repeat;
+  box-shadow: 0 1px 0 rgba(29,30,28,.06), 0 10px 18px -14px rgba(29,30,28,.45);
+  filter: saturate(.88);
+  transition: filter .5s;
 }
-.swatches li:nth-child(2), .swatches li:nth-child(4) { color: var(--paper); }
+.swatch::after { content: ""; position: absolute; inset: 0; box-shadow: inset 0 0 0 1px rgba(29,30,28,.08); }
+.swatches li:hover .swatch { filter: none; }
+.swatch__name { font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; color: var(--tech); padding-top: 6px; border-top: 1px solid var(--hair); }
 .swatches li:nth-child(even) { transform: translateY(14px); }
 .tile--materials:hover .swatches li { transform: none; }
 
@@ -731,6 +736,28 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
   .project-grid.is-filtered .project { grid-column: 1 / -1; }
 }
 
+/* Projeto em destaque: projeto × executado */
+.case { padding-top: clamp(56px, 7vw, 104px); scroll-margin-top: 80px; }
+.case__head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gap); row-gap: 24px; align-items: end; margin-bottom: clamp(32px, 4vw, 56px); }
+.case__head > div:first-child { grid-column: 1 / span 7; display: grid; gap: 18px; }
+.case__intro { grid-column: 9 / span 4; display: grid; gap: 14px; }
+.case__intro p:not(.lead) { color: var(--ink-2); font-size: .95rem; }
+.compare { display: flex; align-items: flex-start; gap: clamp(12px, 2vw, 28px); }
+.compare__item { flex: var(--g) 1 0; margin: 0; min-width: 0; display: grid; gap: 12px; }
+.compare__frame { aspect-ratio: var(--ar); }
+.compare__item figcaption { font-size: .82rem; color: var(--ink-2); }
+.compare__tag { display: inline-block; margin-right: .6em; padding: .25em .6em; font-size: .62rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; border: 1px solid var(--ink); }
+.compare__tag--done { background: var(--ink); color: var(--paper); }
+.compare__arrow { align-self: center; flex: none; color: var(--tech); }
+.case__facts { margin-top: clamp(28px, 3vw, 40px); }
+.case + .projects-page { margin-top: clamp(56px, 7vw, 104px); padding-top: clamp(40px, 5vw, 72px); border-top: 1px solid var(--hair); }
+@media (max-width: 920px) {
+  .case__head > div:first-child, .case__intro { grid-column: 1 / -1; }
+  .compare { flex-direction: column; }
+  .compare__item { width: 100%; flex: none; }
+  .compare__arrow { transform: rotate(90deg); }
+}
+
 /* Método em detalhe */
 .phases { padding-top: clamp(24px, 4vw, 48px); padding-bottom: var(--section); }
 .phase {
@@ -787,7 +814,7 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
 /* Sócias */
 .founders { padding-bottom: var(--section); }
 .founders__grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gap); row-gap: 48px; align-items: start; }
-.founder { grid-column: span 4; display: grid; gap: 8px; }
+.founder { grid-column: span 4; display: grid; gap: 8px; align-content: start; padding-top: 20px; border-top: 1px solid var(--ink); }
 .founder--offset { margin-top: clamp(40px, 8vw, 120px); }
 .founder__photo { aspect-ratio: 4 / 5; margin-bottom: 12px; }
 .founder__name { font-family: var(--f-serif); font-weight: 400; font-size: 2rem; line-height: 1; }

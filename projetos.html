@@ -6,7 +6,11 @@
   <title>Projetos — North Arquitetura &amp; Soluções</title>
   <meta name="description" content="Projetos residenciais, de reforma e interiores e comerciais da North Arquitetura & Soluções: necessidade, solução, escopo e espaço construído.">
   <meta name="theme-color" content="#F2EFE8">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <script>document.documentElement.classList.add("js")</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,11 +71,53 @@
           <h1 class="display page-hero__title" id="page-title" data-reveal>Necessidade, solução <em>e espaço construído.</em></h1>
           <div class="page-hero__side" data-reveal>
             <p class="lead">Cada projeto mostra a pergunta que deu origem a ele, a resposta encontrada e como ela virou espaço.</p>
-            <p class="notice"><strong>Conteúdo de exemplo.</strong> Imagens e textos são referências de layout e serão substituídos pelos projetos reais da North.</p>
+            <p class="notice"><strong>Juju Baby</strong> é um projeto da North. Os projetos marcados como “Exemplo” são referências de layout e serão substituídos pelo portfólio real.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Projeto real em destaque -->
+    <article class="container case" id="juju-baby" aria-labelledby="case-title">
+      <header class="sheet-head" data-reveal>
+        <span class="sheet-head__idx">P—01</span>
+        <span class="sheet-head__name">Projeto em destaque</span>
+        <span class="sheet-head__rule" aria-hidden="true"></span>
+        <span class="sheet-head__meta">Comercial</span>
+      </header>
+
+      <div class="case__head">
+        <div>
+          <p class="label" data-reveal>Shopping São Bernardo Plaza · São Bernardo do Campo</p>
+          <h2 class="display display--md" id="case-title" data-reveal>Juju Baby, <em>um jardim encantado.</em></h2>
+        </div>
+        <div class="case__intro" data-reveal>
+          <p class="lead">Nosso mais novo destaque: uma loja infantil pensada como boutique, que mistura sofisticação e lúdico.</p>
+          <p>O projeto traz toda a magia de um jardim encantado e um espaço instagramável — para garantir boas fotos na divulgação da marca e para que os clientes também queiram registrar a visita.</p>
+        </div>
+      </div>
+
+      <!-- Projeto × executado: as duas imagens lado a lado, com a mesma altura -->
+      <div class="compare" data-reveal>
+        <figure class="compare__item" style="--ar: 1166 / 1035; --g: 1.127">
+          <div class="frame compare__frame"><img src="assets/img/projetos/juju-baby-projeto.webp" alt="Render do projeto da fachada da Juju Baby: tons rosados, arcos com roupas suspensas e vitrine emoldurada" loading="lazy" width="1166" height="1035"></div>
+          <figcaption><span class="compare__tag">Projeto</span> Render da fachada</figcaption>
+        </figure>
+        <span class="compare__arrow" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
+        <figure class="compare__item" style="--ar: 1340 / 1005; --g: 1.333">
+          <div class="frame compare__frame"><img src="assets/img/projetos/juju-baby-executado.webp" alt="Fachada executada da Juju Baby, inaugurada no Shopping São Bernardo Plaza" loading="lazy" width="1340" height="1005"></div>
+          <figcaption><span class="compare__tag compare__tag--done">Executado</span> Loja inaugurada</figcaption>
+        </figure>
+      </div>
+
+      <dl class="project__facts case__facts" data-reveal>
+        <div><dt>Necessidade</dt><dd>Uma boutique infantil sofisticada, sem perder o encanto e o lado lúdico.</dd></div>
+        <div><dt>Solução</dt><dd>A linguagem de um jardim encantado: tons suaves, arcos com peças suspensas e vitrine emoldurada.</dd></div>
+        <div><dt>Destaque</dt><dd>Espaço instagramável, pensado para a divulgação da marca e para os clientes.</dd></div>
+        <div><dt>Espaço</dt><dd>Do render à inauguração: a fachada executada segue o projeto.</dd></div>
+      </dl>
+      <!-- TODO: confirmar o escopo contratado (ex.: projeto comercial, interiores, acompanhamento de obra) -->
+    </article>
 
     <section class="container projects-page" aria-label="Lista de projetos">
       <div class="filters" role="group" aria-label="Filtrar projetos por categoria" data-filters>
