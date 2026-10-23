@@ -702,6 +702,13 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
 .detail--flip .detail__sketch { left: auto; right: -14%; }
 .detail__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px var(--gap); width: 100%; padding-top: 20px; border-top: 1px solid var(--hair); }
 .detail__h { font-size: .66rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--tech); margin-bottom: 10px; }
+.detail__img img { position: absolute; inset: 0; }
+.detail__cap { position: absolute; top: 14px; right: 14px; z-index: 1; }
+.detail__cap a {
+  display: inline-block; padding: .45em .8em; background: var(--paper); color: var(--ink);
+  font-size: .62rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; text-decoration: none;
+}
+.detail__cap a:hover { background: var(--ink); color: var(--paper); }
 .ticks li { position: relative; padding: .3rem 0 .3rem 1.4rem; font-size: .95rem; color: var(--ink-2); }
 .ticks li::before { content: ""; position: absolute; left: 0; top: .95rem; width: .8rem; height: 1px; background: var(--accent); }
 .details__note { padding-top: clamp(48px, 6vw, 80px); }
