@@ -749,7 +749,15 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
 .compare__tag { display: inline-block; margin-right: .6em; padding: .25em .6em; font-size: .62rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; border: 1px solid var(--ink); }
 .compare__tag--done { background: var(--ink); color: var(--paper); }
 .compare__arrow { align-self: center; flex: none; color: var(--tech); }
-.case__facts { margin-top: clamp(28px, 3vw, 40px); }
+.case__story { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gap); row-gap: 40px; margin-top: clamp(40px, 5vw, 72px); align-items: start; }
+.case__text { grid-column: 1 / span 7; display: grid; gap: 18px; }
+.case__text p { color: var(--ink-2); max-width: 60ch; }
+.case__text .case__quote { font-family: var(--f-serif); font-size: clamp(1.6rem, 2.6vw, 2.3rem); line-height: 1.2; color: var(--ink); max-width: 28ch; margin-bottom: 8px; }
+.case__facts { grid-column: 9 / span 4; border-top: 1px solid var(--ink); }
+.case__facts > div { padding: 14px 0; border-bottom: 1px solid var(--hair); }
+.case__facts dt { font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+.case__facts dd { font-size: .92rem; color: var(--ink-2); line-height: 1.45; }
+@media (max-width: 920px) { .case__text, .case__facts { grid-column: 1 / -1; } }
 .case + .projects-page { margin-top: clamp(56px, 7vw, 104px); padding-top: clamp(40px, 5vw, 72px); border-top: 1px solid var(--hair); }
 @media (max-width: 920px) {
   .case__head > div:first-child, .case__intro { grid-column: 1 / -1; }
