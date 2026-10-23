@@ -765,6 +765,10 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
 .case__facts dt { font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
 .case__facts dd { font-size: .92rem; color: var(--ink-2); line-height: 1.45; }
 @media (max-width: 920px) { .case__text, .case__facts { grid-column: 1 / -1; } }
+.case--next { margin-top: clamp(64px, 8vw, 120px); border-top: 1px solid var(--hair); }
+.case__wide { margin: clamp(40px, 5vw, 64px) 0 0; display: grid; gap: 12px; }
+.case__wide-frame { aspect-ratio: 16 / 9; }
+.case__wide figcaption { font-size: .82rem; color: var(--ink-2); }
 .case + .projects-page { margin-top: clamp(56px, 7vw, 104px); padding-top: clamp(40px, 5vw, 72px); border-top: 1px solid var(--hair); }
 @media (max-width: 920px) {
   .case__head > div:first-child, .case__intro { grid-column: 1 / -1; }
